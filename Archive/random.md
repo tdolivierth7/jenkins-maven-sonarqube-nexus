@@ -14,7 +14,7 @@
 
 3. Create Jenkins VM
   - Pass Userdata to install Jenkins
-  - RUN MANUAL COMMANDS to setup and configure MAVEN from `manual-maven-install.sh` = https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/jenkins-maven-sonarqube-nexus/Archive/manual-maven-install.sh 
+  - RUN MANUAL COMMANDS to setup and configure MAVEN from `manual-maven-install.sh` = https://github.com/tdolivierth7/jenkins-maven-sonarqube-nexus/blob/main/Archive/manual-maven-install.sh
 
 ## CONFIGURE AND SETUP JENKINS | CREATE PROJECT
 1. Install Plugins (`Pipeline: Stage View`, `Blue Ocean` and `Slack Notification`)
