@@ -16,7 +16,8 @@ yum install java-1.8.0-devel -y  # Use for Java and Maven Compiler
 java --version
 wget https://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
 sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
-yum install -y apache-maven
+sudo yum install maven -y
+sudo yum install -y apache-maven
 
 ## Configure MAVEN_HOME and PATH Environment Variables
 rm .bash_profile
