@@ -19,20 +19,20 @@
      - Download the Project Zip from https://github.com/tdolivierth7/jenkins-maven-sonarqube-nexus/tree/main
      - Unzip and Push the code to the Repository you just provisioned
 
-2) SonarQube
-    - Create an Create an Ubuntu 24.04 LTS (HVM) VM instance and call it "SonarQube"
-    - Instance type: `t2.medium`
-    - Security Group (Open): 9000 and 22 to 0.0.0.0/0
-    - Key pair: Select or create a new keypair
-    - User data (Copy the following user data): https://github.com/tdolivierth7/jenkins-maven-sonarqube-nexus/blob/main/tools/sonarqube-install.sh
-    - Launch Instance
-
-3) Nexus
+2) Nexus
     - Create an Ubuntu 24.04 LTS (HVM) VM instance and call it "Nexus"
     - Instance type: `t2.large`
     - Security Group (Open): 8081 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
-    - User data (Copy the following user data): https://github.com/tdolivierth7/jenkins-maven-sonarqube-nexus/blob/main/tools/nexus-install.sh 
+    - User data (Copy the following user data): https://github.com/tdolivierth7/software-install/blob/main/Nexus-Install.sh
+    - Launch Instance
+
+3) SonarQube
+    - Create an Create an Ubuntu 24.04 LTS (HVM) VM instance and call it "SonarQube"
+    - Instance type: `t2.medium`
+    - Security Group (Open): 9000 and 22 to 0.0.0.0/0
+    - Key pair: Select or create a new keypair
+    - User data (Copy the following user data): https://github.com/tdolivierth7/software-install/blob/main/SonarQube-Install.sh
     - Launch Instance
 
 4) Jenkins/Maven
