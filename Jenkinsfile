@@ -1,5 +1,11 @@
 pipeline {
   agent any // This specifies that the pipeline can run on any available agent
+
+  environment {
+    // <<<--- ADDED: allow reflective access needed by Sonar (quick fix)
+    MAVEN_OPTS = "--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED" // <<<--- ADDED
+  }
+
   stages {
     stage('Validate Project') {
         steps {
