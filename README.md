@@ -36,7 +36,7 @@
     - Launch Instance
 
 4) Jenkins/Maven
-    - Create an Amazon Linux 2 VM instance and call it "Jenkins-Maven"
+    - Create an Ubuntu 24.04 LTS (HVM) VM instance and call it "Jenkins-Maven"
     - Instance type: `t2.medium`
     - Security Group (Open): 8080 and 22 to 0.0.0.0/0 or Your-IP
     - Key pair: Select or create a new keypair
